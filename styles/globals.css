@@ -10,6 +10,7 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  background-color: var(--page_bg_color);
 }
 
 h1,
@@ -27,12 +28,13 @@ ul {
   padding: 0;
   list-style: none;
 }
-
 picture {
   margin: 0;
   padding: 0;
 }
-
+.header__theme-menu-button_active{
+  pointer-events: none;
+}
 button,
 a {
   color: currentColor;
@@ -40,3 +42,83 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+button:hover{
+  outline: 1px solid currentColor;
+}
+button:focus{
+  outline: none;
+}
+button:focus-visible{
+  border-bottom: 1px solid currentColor;
+}
+a{
+  text-shadow: 2px 2px 0 var(--bg_title-color);
+}
+a:hover{
+  text-decoration: underline;
+}
+a:focus{
+  outline: none;
+}
+a:focus-visible{
+  border: 1px solid #fff;
+}
+.header__theme-menu-button_active{
+  border: 1px solid currentColor;
+}
+@media(prefers-color-scheme:dark){
+  .page.theme_dark {
+    --title-color: #da00fe;
+    --page_bg_color: #000028;
+    --text-color: #F1B2CE;
+    --bg_title-color: #FF0070;
+    --bg_secondary_title-color: #FF0070;
+    --text_secondary_title-color: #000028;
+    --title-text-color: #FF0070;
+    --header-image : url(/images/cover-image-dark.png);
+  }
+  
+  .rec{
+    position: absolute;
+    top: 20px;
+    left: 943px;
+    width:56px;
+    height: 26px;
+    text-transform: uppercase;
+    font-family: 'IBM Plex mono', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 139%;
+    text-align: left;
+    color: var(--title-text-color);
+  }
+  .rec::after{
+    content: '';
+    position: absolute;
+    inline-size: 10px;
+    block-size: 10px;
+    margin-left: 10px;
+    margin-top: 8px;
+    border-radius: 50%;
+    background-color:  var(--bg_title-color);
+    box-shadow:0 0 5px 2px var(--bg_title-color);
+  }
+}
+@media(prefers-color-scheme:light){
+  .page.theme_light {
+    --title-color: #fec2e7;
+    --page_bg_color: #fff0f6;
+    --text-color: #353430;
+    --bg_title-color: #FF8DCB;
+    --bg_secondary_title-color: #FF8DCB;
+    --text_secondary_title-color: #000028;
+    --title-text-color: #353430;
+    --header-image : url(/images/cover-image-light.png);
+  }
+}
+@media(color-scheme:light){
+  .rec{
+    display: none;
+  }
+}
+
