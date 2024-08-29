@@ -2,7 +2,7 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root{
+:root {
   --display_rec : content;
   --title-color: #da00fe;
   --page_bg_color: #000028;
