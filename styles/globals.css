@@ -64,8 +64,9 @@ a:focus-visible {
   border: 1px solid currentColor;
   pointer-events: none;
 }
-@media(prefers-color-scheme:dark) {
-  .page.theme_dark {
+
+@media(prefers-color-scheme:dark){
+ .page.theme_auto {
     --title-color: #da00fe;
     --page_bg_color: #000028;
     --text-color: #F1B2CE;
@@ -74,36 +75,11 @@ a:focus-visible {
     --text_secondary_title-color: #000028;
     --title-text-color: #FF0070;
     --header-image : url(/images/cover-image-dark.png);
-  }
-  
-  .rec {
-    position: absolute;
-    top: 20px;
-    left: 943px;
-    width:56px;
-    height: 26px;
-    text-transform: uppercase;
-    font-family: 'IBM Plex mono', sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 139%;
-    text-align: left;
-    color: var(--title-text-color);
-  }
-  .rec::after {
-    content: '';
-    position: absolute;
-    inline-size: 10px;
-    block-size: 10px;
-    margin-left: 10px;
-    margin-top: 8px;
-    border-radius: 50%;
-    background-color:  var(--bg_title-color);
-    box-shadow:0 0 5px 2px var(--bg_title-color);
+    --display_rec : content;
   }
 }
 @media(prefers-color-scheme:light) {
-  .page.theme_light {
+  .page.theme_auto {
     --title-color: #fec2e7;
     --page_bg_color: #fff0f6;
     --text-color: #353430;
@@ -112,11 +88,6 @@ a:focus-visible {
     --text_secondary_title-color: #000028;
     --title-text-color: #353430;
     --header-image : url(/images/cover-image-light.png);
-  }
+    --display_rec : none;
+  } 
 }
-@media(color-scheme:light) {
-  .rec {
-    display: none;
-  }
-}
-
