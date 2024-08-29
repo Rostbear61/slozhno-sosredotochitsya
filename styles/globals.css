@@ -66,7 +66,8 @@ a:focus-visible {
 }
 
 @media(prefers-color-scheme:dark) {
- .page.theme_auto {
+ .page.theme_auto,
+ .page {
     --title-color: #da00fe;
     --page_bg_color: #000028;
     --text-color: #F1B2CE;
@@ -79,7 +80,8 @@ a:focus-visible {
   }
 }
 @media(prefers-color-scheme:light) {
-  .page.theme_auto {
+  .page.theme_auto,
+  .page {
     --title-color: #fec2e7;
     --page_bg_color: #fff0f6;
     --text-color: #353430;
