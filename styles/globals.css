@@ -65,7 +65,7 @@ a:focus-visible {
   pointer-events: none;
 }
 
-@media(prefers-color-scheme:dark){
+@media(prefers-color-scheme:dark) {
  .page.theme_auto {
     --title-color: #da00fe;
     --page_bg_color: #000028;
@@ -89,5 +89,5 @@ a:focus-visible {
     --title-text-color: #353430;
     --header-image : url(/images/cover-image-light.png);
     --display_rec : none;
-  } 
+  }
 }
