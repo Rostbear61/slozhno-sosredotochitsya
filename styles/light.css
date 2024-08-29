@@ -12,6 +12,20 @@
   --bg_secondary_title-color: #FF8DCB;
   --text_secondary_title-color: #000028;
   --title-text-color: #353430;
-  --header-image : url(/images/cover-image-light.png);
+  --header-image : url(../images/cover-image-light.png);
   --display_rec : none;
+}
+@media(prefers-color-scheme:light) {
+  .page.theme_auto,
+  .page {
+    --title-color: #fec2e7;
+    --page_bg_color: #fff0f6;
+    --text-color: #353430;
+    --bg_title-color: #FF8DCB;
+    --bg_secondary_title-color: #FF8DCB;
+    --text_secondary_title-color: #000028;
+    --title-text-color: #353430;
+    --header-image : url(../images/cover-image-light.png);
+    --display_rec : none;
+  }
 }

@@ -5,7 +5,6 @@
 */
 
 .page.theme_dark {
-  --display_rec : content;
   --title-color: #da00fe;
   --page_bg_color: #000028;
   --text-color: #F1B2CE;
@@ -13,5 +12,20 @@
   --bg_secondary_title-color: #FF0070;
   --text_secondary_title-color: #000028;
   --title-text-color: #FF0070;
-  --header-image : url(/images/cover-image-dark.png);
+  --header-image : url(../images/cover-image-dark.png);
+  --display_rec : content;
 }
+@media(prefers-color-scheme:dark) {
+  .page.theme_auto,
+  .page {
+     --title-color: #da00fe;
+     --page_bg_color: #000028;
+     --text-color: #F1B2CE;
+     --bg_title-color: #FF0070;
+     --bg_secondary_title-color: #FF0070;
+     --text_secondary_title-color: #000028;
+     --title-text-color: #FF0070;
+     --header-image : url(../images/cover-image-dark.png);
+     --display_rec : content;
+   }
+ }
