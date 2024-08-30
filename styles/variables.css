@@ -12,5 +12,7 @@
   --text_secondary_title-color: #000028;
   --title-text-color: #FF0070;
   --header-image : url(./images/cover-image-dark.png);
+  --button-hover_color : rgba(255, 0, 112, 0.4);
+  --decore-zone-color : #FF0070;
   --header-title-text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }

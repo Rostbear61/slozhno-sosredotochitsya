@@ -12,6 +12,8 @@
   --bg_secondary_title-color: #FF8DCB;
   --text_secondary_title-color: #000028;
   --title-text-color: #353430;
+  --button-hover_color : rgba(50, 49, 45, 0.4);
+  --decore-zone-color : #353430;
   --header-image : url(../images/cover-image-light.png);
   --display_rec : none;
 }
@@ -25,6 +27,8 @@
     --bg_secondary_title-color: #FF8DCB;
     --text_secondary_title-color: #000028;
     --title-text-color: #353430;
+    --button-hover_color : rgba(50, 49, 45, 0.4);
+    --decore-zone-color : #353430;
     --header-image : url(../images/cover-image-light.png);
     --display_rec : none;
   }

@@ -12,6 +12,8 @@
   --bg_secondary_title-color: #FF0070;
   --text_secondary_title-color: #000028;
   --title-text-color: #FF0070;
+  --button-hover_color : rgba(255, 0, 112, 0.4);
+  --decore-zone-color : #FF0070;
   --header-image : url(../images/cover-image-dark.png);
   --display_rec : content;
 }
@@ -25,6 +27,8 @@
      --bg_secondary_title-color: #FF0070;
      --text_secondary_title-color: #000028;
      --title-text-color: #FF0070;
+     --decore-zone-color : #FF0070;
+     --button-hover_color : rgba(255, 0, 112, 0.4);
      --header-image : url(../images/cover-image-dark.png);
      --display_rec : content;
    }
