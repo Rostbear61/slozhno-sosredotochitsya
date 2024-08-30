@@ -442,12 +442,6 @@ button:focus-visible {
     flex-direction: column;
     gap: 20px;
   }
-  .main__text_card_title {
-    word-break: break-all;
-  }
-  .main__text_card__text_content {
-    word-break: break-all;
-  }
   .main__text_card_what {
     padding-block-start: 50px;
     display: flex;
