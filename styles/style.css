@@ -17,7 +17,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   height: 100vh;
-  min-height: 668px;
 }
 .rec {
   position: absolute;
@@ -79,7 +78,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  min-height: 768px;
 }
 .header__theme-menu {
   margin-block-start: 17px;
@@ -278,7 +276,7 @@ button:focus-visible {
     --header-title-text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .header {
-    min-height: 768px;
+    width: 100%;
     gap: 75px;
   }
   .main__text_card_what {
@@ -301,9 +299,6 @@ button:focus-visible {
   }
   .width_card {
     width: 100%;
-  }
-  .footer {
-    height: 1024px;
   }
 }
 @media (376px < width <= 768px) {
@@ -382,7 +377,6 @@ button:focus-visible {
     right: 38px;
   }
   .header {
-    min-height: 668px;
     padding: 10px;
   }
   .decorated-zone::before {
@@ -395,7 +389,6 @@ button:focus-visible {
   }
   .footer {
     margin-block-start: 40px;
-    min-height: 668px;
     padding: 10px;
   }
   .main__content {
