@@ -307,7 +307,7 @@ button:focus-visible {
   }
 }
 @media (376px < width <= 768px) {
-  .header{
+  .header {
     gap: 60px;
   }
   main {
@@ -336,7 +336,7 @@ button:focus-visible {
   }
   .main_card_what {
     max-width: 236px;
-  } 
+  }
 }
 @media (width < 767px) {
   .main__card_picture_table {
