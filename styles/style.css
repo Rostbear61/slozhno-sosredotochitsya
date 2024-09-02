@@ -77,13 +77,13 @@
   height: 100vh;
   min-height: 668px;
 }
-.text_font{
+.text_font {
   font-family: 'IBM Plex mono', sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 130%;
 }
-.title_font{
+.title_font {
   font-family: 'IBM Plex mono', sans-serif;
   font-weight: bold;
   line-height: 130%;
@@ -218,7 +218,7 @@
   grid-template-rows: repeat(3, max-content);
   gap: 20px;
 }
-.picture{
+.picture {
   object-fit: cover;
   min-width: 100px;
   min-height: 100px;
