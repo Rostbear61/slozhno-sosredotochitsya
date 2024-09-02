@@ -17,16 +17,13 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   height: 100vh;
+  min-height: 668px;
 }
 .rec {
   position: absolute;
   top: 20px;
   right: 48px;
   text-transform: uppercase;
-  font-family: 'IBM Plex mono', sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 139%;
   text-align: left;
   color: var(--title-text-color);
   display: var(--display_rec);
@@ -78,40 +75,52 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  min-height: 668px;
+}
+.text_font{
+  font-family: 'IBM Plex mono', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+}
+.title_font{
+  font-family: 'IBM Plex mono', sans-serif;
+  font-weight: bold;
+  line-height: 130%;
+  font-size: 18px;
 }
 .header__theme-menu {
-  margin-block-start: 17px;
+  margin-block-start: 18px;
   grid-column: 1/2;
   grid-row: 1/2;
 }
 .header__theme-menu-list {
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  gap: 10px;
   justify-content: center;
 }
 .header__theme-menu-button {
+  width:70px;
+  height: 25px;
   border: none;
   background-color: transparent;
-  font-family: 'IBM Plex mono', sans-serif;
-  font-weight: normal;
-  font-size: 18px;
   text-align: center;
   color: var(--title-text-color);
   text-transform: lowercase;
 }
-button:hover {
+.header__theme-menu-button:hover {
   outline: 1px solid var(--button-hover_color);
   cursor: pointer;
 }
-button:focus {
+.header__theme-menu-button:focus {
   outline: none;
 }
-button:focus-visible {
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px solid currentColor;
 }
 .header__theme-menu-button_active {
-  border: 1px solid currentColor;
+  outline: 1px solid currentColor;
   pointer-events: none;
 }
 .title {
@@ -137,10 +146,6 @@ button:focus-visible {
   margin-inline-end: 20px;
 }
 .text_title {
-  font-family: 'IBM Plex mono', sans-serif;
-  font-weight: bold;
-  line-height: 130%;
-  font-size: 18px;
   color: var(--text_secondary_title-color);
   background-color: var(--bg_title-color);
 }
@@ -152,10 +157,6 @@ button:focus-visible {
 }
 .main__text_card_title {
   width: 100%;
-  font-family: 'IBM Plex mono', sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 130%;
   background-color: transparent;
   color: var(--title-text-color);
 }
@@ -186,10 +187,6 @@ button:focus-visible {
   gap: 10px;
 }
 .main__text_card__text_content {
-  font-family: 'IBM Plex mono', sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 130%;
   color: var(--text-color);
 }
 .main__text_card_what_pic {
@@ -211,10 +208,6 @@ button:focus-visible {
   gap: 19px;
 }
 .card_title {
-  font-family: 'IBM Plex mono', sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 130%;
   background-color: var(--bg_title-color);
   color: var(--text_secondary_title-color);
 }
@@ -225,49 +218,39 @@ button:focus-visible {
   grid-template-rows: repeat(3, max-content);
   gap: 20px;
 }
-.picture:nth-of-type(1) {
+.picture{
   object-fit: cover;
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
   min-width: 100px;
   min-height: 100px;
+}
+.picture:nth-of-type(1) {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
   width: clamp(29.9375rem, -1.9375rem + 66.4063vw, 40.5625rem);
   height: clamp(12rem, -0.75rem + 26.5625vw, 16.25rem);
 }
 .picture:nth-of-type(2) {
-  object-fit: cover;
   grid-column: 3 / 4;
   grid-row: 1 / 3;
-  min-width: 100px;
-  min-height: 100px;
   width: clamp(14.3125rem, -1.8125rem + 33.5938vw, 19.6875rem);
   height: clamp(27.5625rem, -1.3125rem + 60.1563vw, 37.1875rem);
 
 }
 .picture:nth-of-type(3) {
-  object-fit: cover;
   grid-column: 1 / 2;
   grid-row: 2 / 4;
-  min-width: 100px;
-  min-height: 100px;
   width: clamp(14.3125rem, -1.8125rem + 33.5938vw, 19.6875rem);
   height: clamp(35.5rem, -2rem + 78.125vw, 48rem);
 }
 .picture:nth-of-type(4) {
-  object-fit: cover;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  min-width: 100px;
-  min-height: 100px;
   width: clamp(14.375rem, -1.5625rem + 33.2031vw, 19.6875rem);
   height: clamp(14.375rem, -1.5625rem + 33.2031vw, 19.6875rem);
 }
 .picture:nth-of-type(5) {
-  object-fit: cover;
   grid-column: 2 / 4;
   grid-row: 3 / 4;
-  min-width: 100px;
-  min-height: 100px;
   width: clamp(29.9375rem, -1.9375rem + 66.4063vw, 40.5625rem);
   height: clamp(19.875rem, -0.75rem + 42.9688vw, 26.75rem);
 }
@@ -282,9 +265,6 @@ button:focus-visible {
   .main__text_card_what {
     display: flex;
     flex-direction: column;
-  }
-  .main_card_why {
-    width: clamp(14.75rem, 0.125rem + 30.4688vw, 19.625rem);
   }
 }
 @media (376px < width < 1024px) {
@@ -305,26 +285,25 @@ button:focus-visible {
   .header {
     gap: 60px;
   }
-  main {
-    padding-inline-start: 10px;
-    padding-inline-end: 10px;
+  .main__content {
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
   }
   .header__theme-menu {
-    margin-inline-end: 27px;
-    margin-block-end: 10px;
+    margin-inline-end: 20px;
+    margin-block-end: 16px;
     justify-self: end;
     align-self: end;
   }
   .header__theme-menu-list {
     display: flex;
     flex-direction: column;
-    gap: 13px;
+    gap: 10px;
     justify-content: center;
   }
   .header_text_title {
     max-width: 364px;
     width: 100%;
-    max-height: 117px;
     justify-self: end;
     align-self: flex-start;
     margin-inline-end: 20px;
@@ -334,6 +313,11 @@ button:focus-visible {
   }
 }
 @media (width < 767px) {
+  .main__text_card_why_how {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
   .main__card_picture_table {
     display: flex;
     flex-direction: column;
@@ -359,13 +343,6 @@ button:focus-visible {
   .picture:nth-of-type(5) {
     width: 100%;
     height: clamp(14.8125rem, 9.9819rem + 20.6107vw, 19.875rem);
-  }
-}
-@media (width <= 475px) {
-  .main__text_card_why_how {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
   }
 }
 @media (width <= 376px) {
@@ -398,7 +375,7 @@ button:focus-visible {
     gap: 50px;
   }
   .header__theme-menu {
-    margin-inline-end: 7.5px;
+    
     margin-block-end: 10px;
     justify-self: end;
     align-self: center;
@@ -406,12 +383,11 @@ button:focus-visible {
   .header__theme-menu-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 11px;
     justify-content: center;
   }
   .header_text_title {
     max-width: 355px;
-    max-height: 117px;
     justify-self: center;
     align-self: center;
     margin: 0 auto;
